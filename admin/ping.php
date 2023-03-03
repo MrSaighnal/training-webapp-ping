@@ -26,7 +26,7 @@ if(!isset($_SESSION['isAdmin']))
    <?php
     if(isset($_POST['address']))
     {
-      system("ping ".$_POST['address']);
+      system("ping ".$_POST['address']." -c 2");
     }
   
 }
