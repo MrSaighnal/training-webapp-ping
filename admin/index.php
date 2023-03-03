@@ -10,6 +10,6 @@
       <input type=hidden name=isAdmin value=false>
       <input type=submit value=send>
     </form>
-    <?php echo "<font color=red>".@$_GET['print']."</font>"; ?>
+    <?php echo "<font color=red>".@$_GET['error']."</font>"; ?>
   </body>
 </html>
