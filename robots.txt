@@ -1,2 +1,2 @@
-Disallow: /Admin
+Disallow: /Administration_Secretz_Page
 Disallow: /oldStuff
