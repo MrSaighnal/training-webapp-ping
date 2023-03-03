@@ -3,6 +3,11 @@
     <title>Admin Panel</title>
   </head>
   <body>
+    <?php
+    session_start();
+    if(isset($_SESSION['isAdmin']))
+      header('Location: ping.php');
+    ?>
     <h1>Admin Panel - Restricted Area</h1>
     <form method=POST action=panel.php>
       Username:  <input type=text name=username>
