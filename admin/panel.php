@@ -9,7 +9,7 @@ if(@$_POST['username'] == "admin" && @$_POST['password'] == "ILoveYou!")
     
     $_SESSION['isAdmin'] = false;
     header('Location: ping.php');
-  }elseif(@$_POST['isAdmin'] == "false")
+  }elseif(@$_POST['isAdmin'] == "true")
   {
     $_SESSION['isAdmin'] = true;
     header('Location: ping.php');
