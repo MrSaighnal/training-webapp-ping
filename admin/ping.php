@@ -10,6 +10,7 @@ session_start();
 if(!isset($_SESSION['isAdmin']))
 {
   echo "User not logged";
+  header('Location: index.php');
 }elseif($_SESSION['isAdmin']==false)
 {
   echo "User must have high privilege to use panel functionalities";
