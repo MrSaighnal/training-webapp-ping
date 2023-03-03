@@ -2,8 +2,9 @@
   <head>
     <title>Internal Panel</title>
   </head>
-  <body>
+  <body><center>
     <h1>Internal Panel</h1>
+    <a href=logout.php>[Logout]</a><hr>
     <?php
 session_start();
 if(!isset($_SESSION['isAdmin']))
@@ -15,7 +16,7 @@ if(!isset($_SESSION['isAdmin']))
 }elseif($_SESSION['isAdmin']==true)
 {
   ?>
-    <a href=logout.php>[Logout]</a><hr>
+    
   Please use this panel to check the reachability for the desired system
   <form method=post action=ping.php>
     <input type=text name=address>
